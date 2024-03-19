@@ -10,6 +10,7 @@ int longestSubString(String s) {
   Map<String, int> charIndexMap = {};
   int start = 0;
   for (int end = 0; end < n; end++) {
+    print(s[end]);
     if (charIndexMap.containsKey(s[end]) && charIndexMap[s[end]]! >= start) {
       start = charIndexMap[s[end]]! + 1;
     }
